@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterative Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;700&family=Poppins:wght@300;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    
+</head>
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg sticky-top myNav" style="background-color: #072827;">
+        <a class="navbar-brand brand" href="https://hungrylizard232.github.io/portfolio/" style="color:rgb(248, 226, 187)">Hungry Lizard</a>
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon toggler"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse right-nav" id="navbarSupportedContent">
+          <ul class="navbar-nav ">
+            <li class="nav-item active">
+              <a class="nav-link" href="https://hungrylizard232.github.io/portfolio/" style="color:rgb(248, 226, 187)" onmouseover="this.style.textDecoration='underline';"onmouseout="this.style.textDecoration='none';" > Works</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#" style="color:rgb(248, 226, 187)" onmouseover="this.style.textDecoration='underline';"onmouseout="this.style.textDecoration='none';"> Resume</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="https://hungrylizard232.github.io/portfolio/about.html" style="color:rgb(248, 226, 187)" onmouseover="this.style.textDecoration='underline';"onmouseout="this.style.textDecoration='none';"> About </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="heading d-flex flex-column justify-content-center align-items-center">
+        <!-- <img src="assets/cover.png"> -->
+        <h1 style="padding-top: 2rem;">QuickPoses Redesign</h1>
+        <h2 style="font-size: 1rem;">redesigning the customization page on figure drawing reference website
+        </h2>
+      </div>
+    
+    <div class="intro container d-flex flex-row">
+        <div class="overview">
+            
+            <p class="small-point"><a href="https://quickposes.com/en/gestures/timed">Quickposes</a> is a website that provides free images for artists to practice their figure drawing skills. Users can customize their practice sessions by selecting the subject they would like to draw, practice duration, and number of images. As a big fan of QuickPoses ‘ image library, I decided to redesign the most commonly used "Timed Practice" page to make it easier to navigate.</p>
+
+            <p class="small-point textbox" style="margin-top: 1.5rem;">Note: This page currently displays a course project. Since I am not completely satisfied with how it turned out, I am currently in the process of revising this project with more user research and competitor analysis! </p>
+        </div>
+        <div class="basic-info" >
+            <ul class="small-point" style="list-style: none;">
+                <li style="margin:0.2rem">Project Type: individual project</li>
+                <li style="margin:0.2rem">Time: ongoing</li>
+                <li style="margin:0.2rem">Role: researcher, designer</li>
+        
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-section container" style="padding-bottom: 0;">
+    <h3 class="section-title text-muted text-uppercase">identifying problems</h3>
+    </div>
+
+    <div class="persona page-section container">
+        <div style="width: 50%;padding: 0;">
+        <img src="assets/general observation.png" alt="a female presenting teacher with children sitting on the floor surrounding a globe" >
+        </div>
+        <div class="font" style="width: 45%; height:auto; font-size: 1.2rem;">
+          <pencil>Introduction contains some unnecessary information that can discourage the users from reading it.</pencil>
+          <pencil>The download app ad has brighter colors than everything else on the page. It is also at a central location that disrupts the user flow. </pencil>
+          <pencil>The menu bar only uses bolding to indicate selection, making it difficult to see what section the user is on at a glance.</pencil>
+          <pencil>The drawing session customization section is clustered with lots of options</pencil>
+          <pencil>It is unclear what the “procedure” section falls under. The information starting from the “Procedure” section seems to be drawing tips for the user, but the user has to read and figure it out themselves.</pencil>
+          <pencil>Procedures and example videos can be redundant information for frequent users</pencil>
+      </div>
+    </div>
+
+    <div class="font page-section container">
+      <h3 class="section-title text-muted text-uppercase">acessibility evaluation</h3>
+      <p>Assessing the accessibility of the Quickposes website with the help of WAVE Web Accessibility Evaluation Tool</p>
+      <bullet>The orange text provides very low contrast from the background</bullet>
+      <bullet>Alternative text missing for various images</bullet>
+      <bullet>The “custom intervals” note is too small and difficult to read</bullet>
+    </div>
+
+    <div class="page-section container">
+        <h3 class="section-title text-muted text-uppercase">low fidelity wireframing</h3>
+        <p class="small-point">With the usability problems and accessibility issues in mind, I created wireframes for the redesign</p>
+        <div class="persona" style="padding: 1rem 0;">
+          <div style="width: 55%;">
+            <img src="assets/wf_laptop.png">
+          </div>
+          <div style="width: 45%;" class="font">
+            <ol style="list-style-type: decimal; padding-top: 2rem;">
+            <li>Unify the fonts used in the page</li>
+            <li>Edit the introduction, so it only contains the most basic information about the website</li>
+            <li>Move the “get the app” advertisement to the navigation bar. Even though the advertisments are not visual pleasing, I don't want to simply remove them, since they are necessary to support the website</li>
+            <li>Change the styling of image categories to look less like buttons</li>
+            <li>Use shading or color to better indicate selection on the menu bar</li>
+            <li>Add “image direction” as a drawing session customization option, so users can filter horizontal or vertical images that make the most use out of their screen spaces</li>
+            <li>Move the Quickpose certificate option to the center of the screen to separate it from the customization section</li>
+            <li>Move the “start” button to the center of the screen to separate it from the customization section and to provide better flow from the previous certificate section</li>
+            <li>Move “Tips and Tricks” to a separate page, so frequent users do not need to see the same information every time</li>
+            <li>Move the “About” section to a separate page to declutter the current page</li>
+            </ol>
+          </div>
+          <div style="width: 50%;">
+            <img src="assets/wf_ipad.png">
+          </div>
+          <div style="width: 50%;">
+            <img src="assets/wf_phone.png">
+          </div>
+        </div>
+    </div>
+
+    
+
+    <div class="page-section container">
+      <h3 class="section-title text-muted text-uppercase">visual style guide</h3>
+      <div class="d-flex justify-content-center" style="width: 80%;">
+        <img src="assets/visual_style_guide.png">
+      </div>
+    </div>
+
+    <div class="page-section container">
+      <h3 class="section-title text-muted text-uppercase">final design</h3>
+      <p>The original, unannotated figma document can be found <a href="https://www.figma.com/file/1uBW8ndF08kEUHlG5QwaFk/QuickPoses?node-id=0%3A1">here</a>.</p>
+      <div class="persona" >
+          <img style="width: 95%;" src="assets/MacBook Air M2 - 1.png">
+          <img style="width: 50%;" src="assets/iPad Pro 11_ - 1.png">
+          <img style="width: 20%;" src="assets/13 Pro - 1.png">
+          <img style="width: 20%;" src="assets/13 Pro - 2.png">
+      </div>
+  </div>
+
+  <div class="page-section container">
+    <h3 class="section-title text-muted text-uppercase">final webpage</h3>
+    <p class="small-point">To practice using html and css, I created a new responsive quickposes website according to my design: <a href="https://hungrylizard232.github.io/Responsive-redesign/">final webpage</a></p>
+  </div>
+
+
+    <h3 class="section-title text-muted text-uppercase text-center" style="padding: 6rem 0 2rem 0;">again, this page is still a work in progress.</h3>
+    <h3 class="section-title text-muted text-uppercase text-center">Thank you for reading and please come back in a month to see the my revision!</h3>
+
+    <div class="myFooter">
+      @Nov 2022 Hungry Lizard
+    </div>
+    
+      
+    
+
+    
+
+</body>
+
+</html>
+
