@@ -85,6 +85,9 @@ img.align-self {
 
 .intro{
     padding-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .overview{
@@ -164,7 +167,7 @@ img.align-self {
 
 .textbox{
     border-radius: 0.7rem;
-    background-color: #f3ec9e;
+    background-color: #e9e8e5;
     /* background-color: #B1D3CA; */
     padding: 0.5rem;
     /* margin-right:3rem; */
@@ -204,6 +207,7 @@ pencil{
     padding-left:0;
     padding-inline-start: 1ch;
     margin:0.3rem;
+    
 }
 
 .feedback{
