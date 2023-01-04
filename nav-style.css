@@ -1,11 +1,11 @@
 /* ========== MY STYLES ========== */
 a{
-    color:#B4CA9D;
+    color:#B4CA9D !important; 
 }
 
 a:hover {
 text-decoration: none;
-color: rgb(112, 153, 124);
+color: rgb(112, 153, 124) !important;
 }
   
 .myNav{
